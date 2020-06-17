@@ -17,6 +17,5 @@
             </p>
         </div>
   @endforeach
-=======
 </div>
 @endsection
