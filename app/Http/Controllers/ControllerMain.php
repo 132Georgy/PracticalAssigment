@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Carmodel;
 use Illuminate\Http\Request;
+
 
 class ControllerMain extends Controller
 {
@@ -10,11 +12,13 @@ class ControllerMain extends Controller
       return view('main');
     }
 
-    public function models(){
-      return view('categories');
+    public function carmodels(){
+      $carmodels = Carmodel::get();
+      return view('carmodels', compact('carmodels'));
     }
-    public function model($model){
-      return view('model', compact('model'));
+    public function carmodel($code){
+      $carmodel = Carmodel::where('code', $code)->first();
+      return view('carmodel', compact('carmodel'));
 
     }
 

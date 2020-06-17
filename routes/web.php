@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'ControllerMain@main');
-Route::get('/models', 'ControllerMain@models');
-Route::get('/{model}', 'ControllerMain@model');
+Route::get('/carmodels', 'ControllerMain@carmodels');
+Route::get('/{carmodel}', 'ControllerMain@carmodel');
 Route::get('/mobiles/{product?}', 'ControllerMain@product');

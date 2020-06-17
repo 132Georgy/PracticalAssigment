@@ -23,7 +23,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="http://internet-shop.tmweb.ru">Все товары</a></li>
-                <li ><a href="/models">Models</a>
+                <li ><a href="/carmodels">Car models</a>
                 </li>
                 <li ><a href="http://internet-shop.tmweb.ru/basket">В корзину</a></li>
                 <li><a href="http://internet-shop.tmweb.ru/reset">Сбросить проект в начальное состояние</a></li>

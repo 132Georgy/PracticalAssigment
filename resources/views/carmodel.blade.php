@@ -50,16 +50,10 @@
 <div class="container">
     <div class="starter-template">
                             <h1>
-                              @if($model== 'bmw')
-                              BMW
-                              @elseif($model== 'audi')
-                              Audi
-                              @elseif($model== 'toyota')
-                              Toyota
-                              @endif
+                              {{$carmodel->name}}
                             </h1>
     <p>
-        Раздел с бытовой техникой
+        {{$carmodel->description}}
     </p>
     <div class="row">
                     <div class="col-sm-6 col-md-4">
