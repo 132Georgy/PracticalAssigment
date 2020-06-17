@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'ControllerMain@main');
-Route::get('/carmodels', 'ControllerMain@carmodels');
-Route::get('/{carmodel}', 'ControllerMain@carmodel');
-Route::get('/mobiles/{product?}', 'ControllerMain@product');
+Route::get('/', 'ControllerMain@main')->name('main');
+Route::get('/carmodels', 'ControllerMain@carmodels')->name('carmodels');
+Route::get('/{carmodel}', 'ControllerMain@carmodel')->name('carmodel');
+Route::get('/{carmodel}/{product?}', 'ControllerMain@product')->name('product');
+Route::get('/cart', 'ControllerMain@cart')->name('cart');
+Route::get('/cart/order', 'ControllerMain@order')->name('order');
