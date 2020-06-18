@@ -8,14 +8,11 @@
       <p>
 
 
-        <form action="{{ route('card-add', $product)}}" method="POST">
+        <form action="{{ route('cart-add', $product)}}" method="POST">
           <button type="submit" class="btn btn-primary" role="button">Add to cart</button>
             <!-- <a href="{{route('product', [ $product->code])}}" class="btn btn-default" role="button">Info</a>-->
 
-        <form action="http://internet-shop.tmweb.ru/basket/add/2" method="POST">
-          <button type="submit" class="btn btn-primary" role="button">Add to cart</button>
-            <a href="{{route('product', [$carmodel->code, $product->code])}}" class="btn btn-default" role="button">Info</a>
-        <input type="hidden" name="_token" value="g89Nhtr6Kx4IVfB2vyORDbxfn2zAdAcQrvBk8gbj">            </form>
+        @csrf </form>
 
       </p>
     </div>
