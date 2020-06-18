@@ -18,7 +18,7 @@
               @foreach($order->products as $product)
                             <tr>
                     <td>
-                        <a href="http://internet-shop.tmweb.ru/mobiles/htc_one_s">
+                        <a href="{{ route('product',[$product->carmodel->$product->code])}}">
                             <img height="56px" src="http://internet-shop.tmweb.ru/storage/products/htc_one_s.png">
                             {{$product->name}}
                         </a>
