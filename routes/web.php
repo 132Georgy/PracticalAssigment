@@ -18,6 +18,7 @@ Auth::routes([
     'confirm' => false,
     'verify' => false,
 ]);
+Route::get('/logout', '\Auth\LoginController@logout')->name('get-logout');
 
 Route::get('/', 'ControllerMain@main')->name('main');
 Route::get('/carmodels', 'ControllerMain@carmodels')->name('carmodels');
