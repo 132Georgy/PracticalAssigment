@@ -28,6 +28,7 @@ class CartController extends Controller
   } else {
     $order = Order::find($orderId);
   }
+
 $order->products()->attach($productId);
 
     return view('cart', compact('order'));

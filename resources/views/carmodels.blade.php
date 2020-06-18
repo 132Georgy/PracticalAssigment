@@ -8,8 +8,9 @@
       @foreach($carmodels as $carmodel)
             <div class="panel">
             <a href="{{$carmodel->code}}">
-                <img src="http://internet-shop.tmweb.ru/storage/categories/mobile.jpg">
-                <h2>{{$carmodel->name}}</h2>
+              <h2>{{$carmodel->name}}</h2>
+                <img src={{$carmodel->image}}>
+
             </a>
             <p>
               {{$carmodel->description}}
