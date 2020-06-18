@@ -1,6 +1,7 @@
 <?php
-use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,11 @@ Auth::routes([
     'confirm' => false,
     'verify' => false,
 ]);
-Route::get('/logout', '\Auth\LoginController@logout')->name('get-logout');
+Route::get('/logout', 'Auth\LoginController@logout')->name('get-logout');
+Route::group(['middleware' => 'auth'], function(){
+  Route::get('/home', 'HomeController@index')->name('home');
+});
+
 
 Route::get('/', 'ControllerMain@main')->name('main');
 

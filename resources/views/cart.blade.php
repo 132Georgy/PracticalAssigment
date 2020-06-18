@@ -18,8 +18,9 @@
               @foreach($order->products as $product)
                             <tr>
                     <td>
-                        <a href="{{ route('product',[$product->carmodel->$product->code])}}">
-                            <img height="56px" src={{$carmodel->image}}>
+
+                            
+                            <img height="56px" src={{$product->image}}>
                             {{$product->name}}
                         </a>
                     </td>

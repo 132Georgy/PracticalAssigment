@@ -24,9 +24,7 @@
 <div id="app">
     <nav class="navbar navbar-default navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-            <a class="navbar-brand" href="http://internet-shop.tmweb.ru">
-                Вернуться на сайт
-            </a>
+
 
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -34,11 +32,9 @@
 
                                     <ul class="nav navbar-nav navbar-right">
                         <li class="nav-item">
-                            <a class="nav-link" href="http://internet-shop.tmweb.ru/login">Войти</a>
+                          <a class="nav-link" href="{{ route('login') }}">Login</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://internet-shop.tmweb.ru/register">Зарегистрироваться</a>
-                        </li>
+
                     </ul>
 
                             </div>
@@ -73,7 +69,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="password" class="col-md-4 col-form-label text-md-right">Пароль</label>
+                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
 
                     <div class="col-md-6">
                         <input id="password" type="password" class="form-control"
@@ -83,8 +79,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Подтвердите
-                        пароль</label>
+                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm password</label>
 
                     <div class="col-md-6">
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
@@ -95,7 +90,7 @@
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         <button type="submit" class="btn btn-primary">
-                            Зарегистрироваться
+                            Register
                         </button>
                     </div>
                 </div>

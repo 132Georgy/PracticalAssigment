@@ -23,12 +23,11 @@ class CartController extends Controller
   $orderId = session('orderId');
   if (is_null($orderId))
     {
-    $order = Order::create()->id;
+    $order = Order::create();
     session(['orderId' => $order->id]);
   } else {
     $order = Order::find($orderId);
   }
-
 $order->products()->attach($productId);
 
     return view('cart', compact('order'));

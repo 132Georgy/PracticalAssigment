@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Админка: Авторизация</title>
+    <title>Authorization</title>
 
     <!-- Scripts -->
     <script src="/js/app.js" defer></script>
@@ -21,39 +21,19 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-default navbar-expand-md navbar-light navbar-laravel">
-        <div class="container">
-            <a class="navbar-brand" href="http://internet-shop.tmweb.ru">
-                Вернуться на сайт
-            </a>
 
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                                    </ul>
-
-                                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('login')}}">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('register')}}">Register</a>
-                        </li>
-                    </ul>
-
-                            </div>
-        </div>
-    </nav>
 
     <div class="py-4">
         <div class="container">
             <div class="row justify-content-center">
                     <div class="col-md-8">
         <div class="card">
-            <div class="card-header">Авторизация</div>
+            <div class="card-header"></div>
 
             <div class="card-body">
-                <form method="POST" action="http://internet-shop.tmweb.ru/login" aria-label="Login">
-                    <input type="hidden" name="_token" value="2erHyRJNF8Gwxx1yDYUaCXfOXpW0LkSYUrILRuEC">                    <div class="form-group row">
+                <form method="POST" action="{{route('login')}}" aria-label="Login">
+                  @csrf
+                        <div class="form-group row">
                         <label for="email" class="col-sm-4 col-form-label text-md-right">E-Mail</label>
 
                         <div class="col-md-6">
@@ -64,7 +44,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="password" class="col-md-4 col-form-label text-md-right">Пароль</label>
+                        <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
 
                         <div class="col-md-6">
                             <input id="password" type="password" class="form-control"
@@ -75,7 +55,7 @@
                     <div class="form-group row mb-0">
                         <div class="col-md-8 offset-md-4">
                             <button type="submit" class="btn btn-primary">
-                                Войти
+                                Login
                             </button>
                         </div>
                     </div>

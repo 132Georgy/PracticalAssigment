@@ -27,13 +27,19 @@
                 <li ><a href="{{ route('cart') }}">Add to cart</a></li>
 
 
-              
+
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="http://internet-shop.tmweb.ru/login">Войти</a></li>
+              @guest
+                                    <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
+                                    <li><a class="nav-link" href="{{ route('register') }}">Register</a></li>
+              @endguest
+              @auth
+                                    <li><a href="{{route('home')}}">Administrator</a></li>
                                     <li><a href="{{route('get-logout')}}">Logout</a></li>
 
+              @endauth
                             </ul>
         </div>
     </div>
