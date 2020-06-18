@@ -26,3 +26,13 @@ class ControllerMain extends Controller
     public function product($carmodel, $product = null){
       return view('product', ['product' => $product]);
     }
+<<<<<<< HEAD
+=======
+    public function cart(){
+      return view('cart');
+    }
+    public function order(){
+      return view('order');
+    }
+}
+>>>>>>> e10387212fe84bbef7887049262c3ae1ba996e6c
