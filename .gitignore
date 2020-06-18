@@ -10,3 +10,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+resources/js/app.js
+resources/js/bootstrap.js
+resources/js/components/ExampleComponent.vue
+resources/views/master.blade.php

@@ -25,21 +25,14 @@
                 <li ><a href="/carmodels">Car models</a>
                 </li>
                 <li ><a href="{{ route('cart') }}">Add to cart</a></li>
-                <li><a href="http://internet-shop.tmweb.ru/reset">Сбросить проект в начальное состояние</a></li>
-                <li><a href="http://internet-shop.tmweb.ru/locale/en">en</a></li>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">₽<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                                                    <li><a href="http://internet-shop.tmweb.ru/currency/RUB">₽</a></li>
-                                                    <li><a href="http://internet-shop.tmweb.ru/currency/USD">$</a></li>
-                                                    <li><a href="http://internet-shop.tmweb.ru/currency/EUR">€</a></li>
-                                            </ul>
-                </li>
+
+              
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                                     <li><a href="http://internet-shop.tmweb.ru/login">Войти</a></li>
+                                    <li><a href="{{route('get-logout')}}">Logout</a></li>
 
                             </ul>
         </div>
