@@ -2,12 +2,13 @@
 
 namespace App;
 
+use App\Product;
 use Illuminate\Database\Eloquent\Model;
 
-class Orders extends Model
+class Order extends Model
 {
     public function products()
     {
-      return $this->belongsToMnay( Product::class );
+      return $this->belongsToMany( Product::class);
     }
 }

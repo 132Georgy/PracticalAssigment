@@ -3,31 +3,32 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Order;
 
 class CartController extends Controller
 {
   public function cart(){
-    $orderId = session ('orderId');
+    $orderId = session('orderId');
     if (!is_null($orderId)){
-      $order = findOrFail($orderId);
+      $order = Order::findOrFail($orderId);
     }
-    return view('cart');
+    return view('cart', compact('order'));
   }
-  public function order(){
+  public function cartplace(){
     return view('order');
   }
-}
+
   public function cartAdd($productId)
   {
   $orderId = session('orderId');
   if (is_null($orderId))
     {
     $order = Order::create()->id;
-    session(['orderId'->$order->id])
+    session(['orderId' => $order->id]);
   } else {
     $order = Order::find($orderId);
   }
-  $order->products()->attach($productId);
+$order->products()->attach($productId);
 
     return view('cart', compact('order'));
   }

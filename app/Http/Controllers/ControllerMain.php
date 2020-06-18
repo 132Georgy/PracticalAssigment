@@ -19,7 +19,6 @@ class ControllerMain extends Controller
     }
     public function carmodel($code){
       $carmodel = Carmodel::where('code', $code)->first();
-      return view('carmodel', compact('carmodel'));
       $products = Product::where('model_id', $carmodel->id)->get();
       return view('carmodel', compact('carmodel', 'products'));
 
@@ -27,10 +26,5 @@ class ControllerMain extends Controller
     public function product($carmodel, $product = null){
          return view('product', ['product' => $product]);
        }
-    public function cart(){
-      return view('cart');
-    }
-    public function order(){
-      return view('order');
-    }
+
 }

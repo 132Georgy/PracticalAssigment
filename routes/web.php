@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', 'ControllerMain@main')->name('main');
 Route::get('/carmodels', 'ControllerMain@carmodels')->name('carmodels');
+
+Route::get('/cart', 'CartController@cart')->name('cart');
+Route::get('/cart/order', 'CartController@cartplace')->name('cart-place');
+Route::post('cart/add/{id}','CartController@cartAdd')->name('cart-add');
+
 Route::get('/{carmodel}', 'ControllerMain@carmodel')->name('carmodel');
 Route::get('/{carmodel}/{product?}', 'ControllerMain@product')->name('product');
-Route::get('/cart', 'CartController@cart')->name('cart');
-Route::get('/cart/order', 'CartController@order')->name('order');
-Route::post('cart/add/{id}','CartController@cartAdd')->name('cart-add');

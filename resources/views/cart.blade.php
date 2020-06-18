@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="starter-template">
-                            <h1>Корзина</h1>
-    <p>Оформление заказа</p>
+                            <h1>Cart</h1>
+    <p>Order</p>
     <div class="panel">
         <table class="table table-striped">
             <thead>
@@ -15,11 +15,12 @@
             </tr>
             </thead>
             <tbody>
+              @foreach($order->products as $product)
                             <tr>
                     <td>
                         <a href="http://internet-shop.tmweb.ru/mobiles/htc_one_s">
                             <img height="56px" src="http://internet-shop.tmweb.ru/storage/products/htc_one_s.png">
-                            HTC One S
+                            {{$product->name}}
                         </a>
                     </td>
                     <td><span class="badge">1</span>
@@ -35,9 +36,9 @@
                                 <input type="hidden" name="_token" value="IDQ7ZubDesbUFWGlOgqg0sun3o0pyc37AB0Yvwlv">                            </form>
                         </div>
                     </td>
-                    <td>12490 ₽</td>
-                    <td>12490 ₽</td>
+                    <td>{{$product->price}} €</td>
                 </tr>
+                @endforeach
                         <tr>
                 <td colspan="3">Общая стоимость:</td>
                 <td>12490 ₽</td>
