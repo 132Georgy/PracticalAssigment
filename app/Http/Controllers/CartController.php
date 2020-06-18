@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class CartController extends Controller
 {
   public function cart(){
+    $orderId = session ('orderId');
+    if (!is_null($orderId)){
+      $order = findOrFail($orderId);
+    }
     return view('cart');
   }
   public function order(){
@@ -25,8 +29,7 @@ class CartController extends Controller
   }
   $order->products()->attach($productId);
 
-    dump($order->products);
-    dump($orderId);
+    return view('cart', compact('order'));
   }
 
 }
