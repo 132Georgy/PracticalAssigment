@@ -8,7 +8,7 @@
       <p>
         <form action="http://internet-shop.tmweb.ru/basket/add/2" method="POST">
           <button type="submit" class="btn btn-primary" role="button">Add to cart</button>
-            <a href="http://internet-shop.tmweb.ru/mobiles/iphone_x_256" class="btn btn-default" role="button">More</a>
+            <a href="{{route('product', [$carmodel->code, $product->code])}}" class="btn btn-default" role="button">Info</a>
         <input type="hidden" name="_token" value="g89Nhtr6Kx4IVfB2vyORDbxfn2zAdAcQrvBk8gbj">            </form>
       </p>
     </div>

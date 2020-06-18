@@ -3,7 +3,6 @@
 @section('content')
     <div class="starter-template">
                             <h1>{{$product}}</h1>
-    <h2>Мобильные телефоны</h2>
     <p>Цена: <b>11980 ₽</b></p>
     <img src="http://internet-shop.tmweb.ru/storage/products/samsung_j6.jpg">
     <p>Современный телефон начального уровня</p>
