@@ -1,2 +1,10 @@
-User-agent: *
-Disallow:
+Sitemap: http://127.0.0.1:8000/sitemap.xml
+
+User-agent: Sogou web spider
+Disallow: /*
+
+User-agent: Sogou inst spider
+Disallow: /*
+
+User-agent: Sogou spider2
+Disallow: /*

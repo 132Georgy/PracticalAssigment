@@ -24,7 +24,7 @@
                 <li class="active"><a href="{{ route('carmodels') }}">All cars</a></li>
                 <li ><a href="/carmodels">Car models</a>
                 </li>
-                <li ><a href="{{ route('cart') }}">Add to cart</a></li>
+                <li ><a href="{{ route('cart') }}">Cart</a></li>
 
 
 

@@ -44,13 +44,13 @@
                 @endforeach
                         <tr>
                 <td colspan="3">Total cost:</td>
-                <td>12490 ₽</td>
+                <td>{{ $order->fullPrice() }} €</td>
             </tr>
             </tbody>
         </table>
         <br>
         <div class="btn-group pull-right" role="group">
-            <a type="button" class="btn btn-success" href="http://internet-shop.tmweb.ru/basket/place">Confirm Order</a>
+            <a type="button" class="btn btn-success" href="">Confirm Order</a>
         </div>
     </div>
     </div>
