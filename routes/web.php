@@ -30,6 +30,7 @@ Route::get('/', 'ControllerMain@main')->name('main');
 Route::get('/cart', 'CartController@cart')->name('cart');
 Route::get('/cart/order', 'CartController@cartplace')->name('cart-place');
 Route::post('cart/add/{id}','CartController@cartAdd')->name('cart-add');
+Route::post('cart/remove/{id}','CartController@cartRemove')->name('cart-remove');
 
 Route::get('/carmodels', 'ControllerMain@carmodels')->name('carmodels');
 
