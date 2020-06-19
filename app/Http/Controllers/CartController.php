@@ -29,7 +29,7 @@ class CartController extends Controller
     $order = Order::find($orderId);
   }
   if($order->products->contains($productId)){
-    $pivotRow = $order -> products()->where('product_id',$productId)->first();
+    $pivotRow = $order -> products()->where('product_id',$productId)->first()->pivot;
     $pivotRow->count++;
     $pivotRow->update();
   } else {

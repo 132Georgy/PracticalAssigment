@@ -39,7 +39,7 @@
                         </div>
                     </td>
                     <td>{{$product->price}} €</td>
-                    <td>{{ $product->GetPrice() Eur}}</td>
+                    <td>{{ $product->GetPrice($product->pivot->count) }} €</td>
                 </tr>
                 @endforeach
                         <tr>
