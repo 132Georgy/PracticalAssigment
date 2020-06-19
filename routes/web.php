@@ -24,6 +24,7 @@ Route::group(['middleware' => 'auth'], function(){
   Route::get('/home', 'HomeController@index')->name('home');
 });
 
+Route::get('locale/{locale}','ControllerMain@changelocale')->name('locale');
 
 Route::get('/', 'ControllerMain@main')->name('main');
 
