@@ -24,7 +24,7 @@
                             {{$product->name}}
                         </a>
                     </td>
-                    <td><span class="badge">1</span>
+                    <td><span class="badge">{{ $product->pivot->count }}</span>
                         <div class="btn-group form-inline">
                             <form action="{{ route('cart-remove',$product) }}" method="POST">
                                 <button type="submit" class="btn btn-danger" href=""><span
@@ -39,6 +39,7 @@
                         </div>
                     </td>
                     <td>{{$product->price}} €</td>
+                    <td>{{ $product->GetPrice() Eur}}</td>
                 </tr>
                 @endforeach
                         <tr>
