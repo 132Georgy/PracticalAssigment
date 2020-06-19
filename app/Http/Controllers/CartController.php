@@ -29,6 +29,8 @@ class CartController extends Controller
     $order->status = 1;
     $order->save();
 
+    session()->forget('orderId');
+
       return redirect()->route('main');
   }
 

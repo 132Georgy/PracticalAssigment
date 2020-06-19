@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Интернет Магазин: Оформить заказ</title>
+    <title>Confrim order</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="/css/template1.css" rel="stylesheet">
@@ -18,17 +18,17 @@
 
 <div class="container">
     <div class="starter-template">
-                            <h1>Подтвердите заказ:</h1>
+                            <h1>Confirm order:</h1>
     <div class="container">
         <div class="row justify-content-center">
 
             <form action="{{route('cart-confirm')}}" method="POST">
                 <div>
-                    <p>Укажите свои имя и номер телефона, чтобы наш менеджер мог с вами связаться:</p>
+
 
                     <div class="container">
                         <div class="form-group">
-                            <label for="name" class="control-label col-lg-offset-3 col-lg-2">Имя: </label>
+                            <label for="name" class="control-label col-lg-offset-3 col-lg-2">Name: </label>
                             <div class="col-lg-4">
                                 <input type="text" name="name" id="name" value="" class="form-control">
                             </div>
@@ -36,7 +36,7 @@
                         <br>
                         <br>
                         <div class="form-group">
-                            <label for="phone" class="control-label col-lg-offset-3 col-lg-2">Номер телефона: </label>
+                            <label for="phone" class="control-label col-lg-offset-3 col-lg-2">Phone number: </label>
                             <div class="col-lg-4">
                                 <input type="text" name="phone" id="phone" value="" class="form-control">
                             </div>
@@ -53,8 +53,8 @@
                     <br>
 
                     <input type="hidden" name="_token" value="7IyB325ASHIHhJKGvqANCWsDvhQkOweIVjDJb807">
-                      @csrf  
-                                   <input type="submit" class="btn btn-success" value="Подтвердите заказ">
+                      @csrf
+                                   <input type="submit" class="btn btn-success" value="Confirm">
                 </div>
             </form>
         </div>
