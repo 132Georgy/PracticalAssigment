@@ -50,7 +50,7 @@
         </table>
         <br>
         <div class="btn-group pull-right" role="group">
-            <a type="button" class="btn btn-success" href="http://internet-shop.tmweb.ru/basket/place">Confirm Order</a>
+            <a type="button" class="btn btn-success" href="{{route('cart-place')}}">Confirm Order</a>
         </div>
     </div>
     </div>
