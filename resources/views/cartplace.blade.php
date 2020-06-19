@@ -8,9 +8,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <p>Total Price: <b>0 Eur.</b></p>
-            <form action="http://internet-shop.tmweb.ru/basket/place" method="POST">
+            <form action="" method="POST">
                 <div>
-                    <p>Укажите свои имя и номер телефона, чтобы наш менеджер мог с вами связаться:</p>
+                    <p>Please write here you number and name:</p>
 
                     <div class="container">
                         <div class="form-group">

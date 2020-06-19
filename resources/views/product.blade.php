@@ -3,12 +3,12 @@
 @section('content')
     <div class="starter-template">
                             <h1>{{$product}}</h1>
-    <p>Цена: <b>11980 ₽</b></p>
-    <img src="http://internet-shop.tmweb.ru/storage/products/samsung_j6.jpg">
-    <p>Современный телефон начального уровня</p>
+    <p>Price: <b>xxx Eur</b></p>
+    <img src="">
+    <p>New car</p>
 
-            <form action="http://internet-shop.tmweb.ru/basket/add/12" method="POST">
-            <button type="submit" class="btn btn-success" role="button">Добавить в корзину</button>
+            <form action="" method="POST">
+            <button type="submit" class="btn btn-success" role="button">Add to Cart</button>
 
             @csrf      </form>
         </div>

@@ -44,7 +44,7 @@
                 @endforeach
                         <tr>
                 <td colspan="3">Total cost:</td>
-                <td>12490 ₽</td>
+                <td>{{ $order->fullPrice() }} €</td>
             </tr>
             </tbody>
         </table>
