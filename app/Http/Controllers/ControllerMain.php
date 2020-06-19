@@ -26,5 +26,11 @@ class ControllerMain extends Controller
     public function product($carmodel, $product = null){
          return view('product', ['product' => $product]);
        }
+    public function changelocale($locale)
+    {
+      App::setLocale($locale);
+      $currentLocale = App::getLocale();
+      return redirect()->back();
+    }
 
 }
