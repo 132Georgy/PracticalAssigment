@@ -41,7 +41,7 @@ $order->products()->attach($productId);
     }
       $order = Order::find('$ordedId');
       $order->products()->detach($productId);
-      return view('cart',compact('order'));
+      return view('cart', compact('order'));
   }
 
 
