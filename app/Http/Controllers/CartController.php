@@ -18,6 +18,21 @@ class CartController extends Controller
     return view('order');
   }
 
+  public function cartConfirm(Request $request){
+  $orderId= session('orderId');
+  if (is_null($orderId)){
+    return redirect()->route('main');
+    }
+    $order=Order::find($orderId);
+    $order->name=$request->name;
+    $order->phone=$request->phone;
+    $order->status = 1;
+    $order->save();
+
+      return redirect()->route('main');
+  }
+
+
   public function cartAdd($productId)
   {
   $orderId = session('orderId');

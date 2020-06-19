@@ -32,6 +32,8 @@ Route::get('/cart', 'CartController@cart')->name('cart');
 Route::get('/cart/order', 'CartController@cartplace')->name('cart-place');
 Route::post('cart/add/{id}','CartController@cartAdd')->name('cart-add');
 Route::post('cart/remove/{id}','CartController@cartRemove')->name('cart-remove');
+Route::post('/cart/order', 'CartController@cartConfirm')->name('cart-confirm');
+
 
 Route::get('/carmodels', 'ControllerMain@carmodels')->name('carmodels');
 

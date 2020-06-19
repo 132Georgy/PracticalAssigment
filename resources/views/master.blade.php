@@ -13,7 +13,7 @@
     <link href="/css/template2.css" rel="stylesheet">
     <link href="/css/template1.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color:#EDEAF3;">
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -47,6 +47,7 @@
 </nav>
 
 <div class="container">
+
     @yield('content')
 </div>
 </body>
