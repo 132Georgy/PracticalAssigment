@@ -19,7 +19,7 @@ class ControllerMain extends Controller
     }
     public function carmodel($code){
       $carmodel = Carmodel::where('code', $code)->first();
-      $products = Product::where('model_id', $carmodel->id)->get();
+      $products = Product::where('carmodel_id', $carmodel->id)->get();
       return view('carmodel', compact('carmodel', 'products'));
 
     }

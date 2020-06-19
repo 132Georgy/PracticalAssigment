@@ -8,7 +8,7 @@
       <p>
         <form action="{{ route('cart-add', $product)}}" method="POST">
           <button type="submit" class="btn btn-primary" role="button">Add to cart</button>
-      
+<a href="{{route('product', [$product->code])}}" class="btn btn-default" role="button">Info</a>
             <!-- <a href="{{route('product', [ $product->code])}}" class="btn btn-default" role="button">Info</a>-->
 
         @csrf </form>

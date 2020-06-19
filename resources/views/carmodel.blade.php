@@ -12,7 +12,7 @@
         {{$carmodel->description}}
     </p>
      <div class="row">
-      @foreach($products as $product)
+      @foreach($carmodel->products as $product)
         @include('card', compact('product'))
       @endforeach
      </div>

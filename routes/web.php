@@ -36,7 +36,7 @@ Route::get('/carmodels', 'ControllerMain@carmodels')->name('carmodels');
 
 
 Route::get('/{carmodel}', 'ControllerMain@carmodel')->name('carmodel');
-Route::get('/{carmodel}/{product?}', 'ControllerMain@product')->name('product');
+Route::get('/{product?}', 'ControllerMain@product')->name('product');
 
 Auth::routes();
 

@@ -15,7 +15,7 @@ class CreateProducts extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->integer('model_id');
+            $table->integer('carmodel_id');
             $table->string('name');
             $table->string('code');
             $table->text('description')->nullable();
