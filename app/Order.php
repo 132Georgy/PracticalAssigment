@@ -15,8 +15,8 @@ class Order extends Model
     public function fullPrice()
     {
       $sum = 0;
-      foreach ($this->products as $product{
-        $sum += $product -> GetPrice();
+      foreach ($this->products as $product){
+        $sum += $product -> GetPrice($product->pivot->count);
       }
       return $sum;
     }
