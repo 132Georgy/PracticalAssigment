@@ -17,13 +17,12 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand">Car Paradise R&G</a>
+            <h1 class="navbar-brand">Car Paradise R&G</h1>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="{{ route('carmodels') }}">All cars</a></li>
-                <li ><a href="/carmodels">Car models</a>
-                </li>
+                <li ><a href="/carmodels">Car models</a></li>
                 <li ><a href="{{ route('cart') }}">Cart</a></li>
                 <li><a href="{{ route('locale','en')}}"> Language </a></li>
 
