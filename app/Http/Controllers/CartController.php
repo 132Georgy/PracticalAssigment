@@ -33,14 +33,15 @@ $order->products()->attach($productId);
     return view('cart', compact('order'));
   }
 
-  public function cartremove($productId)
+  public function cartRemove($productId)
   {
   $orderId = session('orderId');
   if (is_null($orderId))
     {
-    $order = Order::find('$OrdedId');
+    $order = Order::find('$ordedId');
     $order->products()->detach($productId);
     return view('cart',compact('order'));
-  
+    }
 
+  }
 }
