@@ -19,14 +19,14 @@
                             <tr>
                     <td>
 
-                            
+
                             <img height="56px" src={{$product->image}}>
                             {{$product->name}}
                         </a>
                     </td>
                     <td><span class="badge">1</span>
                         <div class="btn-group form-inline">
-                            <form action="" method="POST">
+                            <form action="{{ route('cart-remove',$product) }}" method="POST">
                                 <button type="submit" class="btn btn-danger" href=""><span
                                         class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
                                 @csrf
